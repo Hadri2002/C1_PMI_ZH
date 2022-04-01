@@ -8,7 +8,7 @@ public class Exam extends Grades {
     public void registGradeToSubject(String name, int grade){
         for(int i = 0; i < subjects.size(); i++){
 
-            //Mivel az alapértelmezett jegy 0, ezért minden esetben felül kell írni, tehát set
+            //Mivel az alapértelmezett jegy 0, ezért minden esetben felül kell írni, tehát set függvény minden esetben működik
             if(subjects.get(i).equals(name)){
                 grades.set(i, grade);
             }
