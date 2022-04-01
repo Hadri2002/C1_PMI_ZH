@@ -7,12 +7,13 @@ public class Grades {
     és egy getGrades (String formátumban visszaadja a tárgyak neveit és érdemjegyét) metódussal.
      */
 
+    //A két ArrayList azonos indexén megtalálható a subject és a hozzá tartozó érdemjegy
     protected ArrayList<String> subjects = new ArrayList<>();
     protected ArrayList<Integer> grades = new ArrayList<>();
 
     public void addSubject(String subject){
         subjects.add(subject);
-        grades.add(0);
+        grades.add(0); //alapértelmezett jegy
     }
 
     public void dropSubject (String name){
